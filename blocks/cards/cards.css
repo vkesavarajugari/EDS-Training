@@ -10,18 +10,31 @@
 .cards > ul > li {
   border: 1px solid #dadada;
   background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
 }
 
 .cards .cards-card-body {
   margin: 16px;
+  order: 2;
 }
 
 .cards .cards-card-image {
   line-height: 0;
+  order: 1;
 }
 
 .cards > ul > li img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+/* Swap layout class - reverses the order of image and text */
+.cards > ul > li.swap-layout .cards-card-body {
+  order: 1;
+}
+
+.cards > ul > li.swap-layout .cards-card-image {
+  order: 2;
 }

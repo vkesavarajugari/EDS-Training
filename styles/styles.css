@@ -129,6 +129,16 @@ blockquote {
   margin-bottom: 0.25em;
 }
 
+/* Card paragraph styling */
+.cards .cards-card-body p {
+  color: red;
+}
+
+/* Toggle class for cards */
+.cards .toggle-hidden {
+  display: none;
+}
+
 code,
 pre {
   font-size: var(--body-font-size-s);
@@ -151,6 +161,18 @@ textarea,
 select,
 button {
   font: inherit;
+}
+
+.section-heading{
+  display: block;
+  color: aqua;
+  margin-top: 0.8em;
+  margin-bottom: 0.25em;
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  line-height: 1.25;
+  align-content: center;
+  text-align: left;
 }
 
 /* links */
